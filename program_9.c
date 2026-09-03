@@ -18,7 +18,7 @@ int main(void)
     // pointers to structures
     // struct student *ptr = &s1;
     // printf("student roll no = %d\n", (*ptr).roll);
-    
+    // printf("student roll no = %d\n", ptr->roll);
     strcpy(s1.name,"shafayath");
     printf("student name = %s\n", s1.name);
     printf("student roll no = %d\n", s1.roll);
