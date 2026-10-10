@@ -7,6 +7,12 @@ int main(void)
 
     printf("Square of (*) pattern 1\n");
 
+// *****
+// *****
+// *****
+// *****
+// *****
+
     for (int i = 0; i < num; i++)
     {
         for (int j = 0; j < num; j++)
@@ -19,6 +25,12 @@ int main(void)
 
     printf("Printing other pattern 2\n");
 
+// 11111
+// 22222
+// 33333
+// 44444
+// 55555
+
     for(int i = 0; i < num; i++){
         for(int j=0;j < num; j++){
             printf("%d",i+1);
@@ -27,6 +39,12 @@ int main(void)
     }
     
     printf("printing other pattern 3\n");
+
+// 12345
+// 12345
+// 12345
+// 12345
+// 12345
 
     for (int i = 0; i < num; i++)
     {
@@ -38,6 +56,12 @@ int main(void)
     
     printf("printing other pattern 4\n");
 
+// 54321
+// 54321
+// 54321
+// 54321
+// 54321
+
     for(int i=0;i<num;i++){
         for(int j=num;j>0;j--){
             printf("%d",j);
@@ -46,6 +70,12 @@ int main(void)
     }
 
     printf("printing other pattern 5\n");
+
+// *
+// **
+// ***
+// ****
+// *****
 
     for(int i=0;i<num;i++){
         for(int j=0;j<=i;j++){
@@ -56,6 +86,12 @@ int main(void)
 
     printf("printing other pattern 6\n");
 
+// 1
+// 12
+// 123
+// 1234
+// 12345
+
     for(int i=0;i<num;i++){
         for(int j=0;j<=i;j++){
             printf("%d",j+1);
@@ -64,6 +100,12 @@ int main(void)
     }
 
     printf("printing other pattern 7\n");
+
+// 1
+// 23
+// 456
+// 78910
+// 1112131415
 
     int p = 1;
     for(int i=0;i<=num;i++){
@@ -76,6 +118,12 @@ int main(void)
 
     printf("printing other pattern 8\n");
 
+// 1
+// 23
+// 345
+// 4567
+// 56789
+
     for(int i=0;i<num;i++){
         int c=i+1;
         for(int j=0;j<=i;j++){
@@ -86,6 +134,12 @@ int main(void)
     }
 
     printf("printing other pattern 9\n");
+
+//     *
+//    ***
+//   *****
+//  *******
+// *********
 
     for(int i=0;i<num;i++){
 
@@ -102,6 +156,12 @@ int main(void)
     }
 
     printf("printing other pattern 10\n");
+
+//     1
+//    123
+//   12345
+//  1234567
+// 123456789
 
     for (int i = 0; i < num; i++)
     {
@@ -120,6 +180,12 @@ int main(void)
 
     printf("\nPattern 2 \n \n");
 
+// ABCDE
+// ABCDE
+// ABCDE
+// ABCDE
+// ABCDE
+
     char a = 'A';
 
     for (int i = 0; i < num; i++)
@@ -134,6 +200,13 @@ int main(void)
 
     printf("\nprinting other pattern 2\n");
 
+// ABCDE
+// BCDEF
+// CDEFG
+// DEFGH
+// EFGHI
+
+
     for(int i=0;i<num;i++){
         char c = (a+i+1)-1;
         for(int j=0;j<num;j++){
@@ -144,6 +217,12 @@ int main(void)
     }
 
     printf("\nprinting other pattern 3\n");
+
+// *****
+// ****
+// ***
+// **
+// *
     
     for (int i = num-1; i >= 0; i--)
     {
@@ -154,6 +233,12 @@ int main(void)
     }
 
     printf("\nprinting other pattern 4\n");
+
+//     *
+//    **
+//   ***
+//  ****
+// *****
 
     for (int i = 0; i < num; i++)
     {
@@ -168,6 +253,12 @@ int main(void)
     
     printf("\nprinting other pattern 5\n");
 
+// *****
+//  ****
+//   ***
+//    **
+//     *
+
     for(int i = 0; i < num; i++){
         for (int k = 0; k < i; k++)
         {
@@ -181,6 +272,12 @@ int main(void)
     }
 
     printf("\nprinting other pattern 6\n");
+
+//      1
+//     121
+//    12321
+//   1234321
+//  123454321
     
     for(int i = 0;i<num;i++){
 
@@ -197,6 +294,12 @@ int main(void)
     }
 
     printf("printing other pattern 7\n");
+
+// 123454321
+//  1234321
+//   12321
+//    121
+//     1
 
     for(int i=0;i<num;i++){
         for(int k=0;k<i;k++){
@@ -215,6 +318,16 @@ int main(void)
     }
 
     printf("printing other pattern 8\n");
+
+// 1 2 3 4 5 
+//  2 3 4 5 
+//   3 4 5 
+//    4 5 
+//     5 
+//    4 5 
+//   3 4 5 
+//  2 3 4 5 
+// 1 2 3 4 5 
 
     for (int i = 0; i < num; i++)
     {
