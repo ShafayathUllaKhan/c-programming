@@ -1,3 +1,4 @@
+// push 0 to end
 #include <stdio.h>
 
 void pushZero(int arr[],int len){
