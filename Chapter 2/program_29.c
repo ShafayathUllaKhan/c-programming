@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// reverse a array
 void swap(int arr[],int l,int r){
     int temp;
 

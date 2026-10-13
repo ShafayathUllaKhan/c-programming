@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// rotate array from number of rotation with reverse function
 int reverse(int arr[],int l,int r){
 
     while(l < r){

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// sum of the array elements
 int main(void)
 {
     int n;

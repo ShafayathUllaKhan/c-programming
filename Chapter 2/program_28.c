@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// insert the element in position
 int update(int arr[],int key,int newKey,int n){
 
     for (int i = 0; i < n; i++)

@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// print the last number
 int main(void)
 {
     int n;

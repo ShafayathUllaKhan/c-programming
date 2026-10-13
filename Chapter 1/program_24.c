@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
+// find largest and second largest
 int main(void)
 {
     int arr[5];
