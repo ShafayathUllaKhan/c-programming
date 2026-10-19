@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -26,5 +27,30 @@ int main(void)
         printf("\n");
     }
 
+    // create three row pointers, initially NULL
+    int **Arr = calloc(3, sizeof(*Arr));
+
+    if(Arr == NULL){
+        fprintf(stderr, "Memory allocation failed.\n");
+        return 1;
+    }
+
+    printf("%p\n",(void *)Arr[0]);// (nil) It represents address zero (0x0 or 0x00000000), which means the pointer is empty and does not point to any valid memory location.
+    printf("%p\n",(void *)Arr[1]);
+    printf("%p\n",(void *)Arr[2]);
+
+    // Allocate each row seprately
+    Arr[0] = calloc(5, sizeof(*Arr[0]));
+    Arr[1] = calloc(7, sizeof(*Arr[1]));
+    Arr[2] = calloc(10,sizeof(*Arr[2]));
+
+    printf("%p\n",(void *)Arr[0]);
+    printf("%p\n",(void *)Arr[1]);
+    printf("%p\n",(void *)Arr[2]);
+
+    free(Arr[0]);
+    free(Arr[1]);
+    free(Arr[2]);
+    free(Arr);
     return 0;
 }
