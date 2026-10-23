@@ -9,6 +9,7 @@ int main(void)
 
     // character arrays containing copies of the text
     char str1[] = "Java";
+    // str1 and str2 have same meaomary address because of same value
     char str2[] = "Java";
     char str3[] = "java";
 

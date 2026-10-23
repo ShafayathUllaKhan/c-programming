@@ -10,6 +10,9 @@ int main(void)
     //fgets(str,sizeof(str),stdin);
 
     str[strcspn(str,"\n")] = '\0';
+    // Replace the newline character with a null terminator
+    // If '\n' is found at index 5, name[5] becomes '\0'.
+    // If no '\n' is found, name[strlen(name)] becomes '\0' (harmless overwrite).
 
     //printf("%s",str);
 

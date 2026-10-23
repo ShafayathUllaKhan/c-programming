@@ -66,7 +66,7 @@ int largest1(int ***arr,int *rows,int *cols,long long *largest){
         {
            sum = sum +  (*arr)[i][j];
         }
-        if(sum > *largest){
+        if(j==0 || sum > *largest){
             *largest = sum;
         }
     }

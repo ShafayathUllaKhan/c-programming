@@ -85,7 +85,7 @@ int longestCol(const int * const *arr, int rows, int cols,
             sum += arr[i][j];
         }
 
-        if (j == 0 || sum > *largest) {
+        if (j == 0 || sum > *largest) {// j == 0 is very import if negative value is greater in o column then in will go into if condition
             *largest = sum;
         }
     }

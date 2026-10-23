@@ -82,6 +82,6 @@ int main(void)
 
     selection_sort(arr,size);
     bubblesort(arr,size);// if the array is sorted the time complexity of bubble sort is big o of n but code needs to be optimize
-    insertionsort(arr,size);// takes an element and places to its correct position
+    insertionsort(arr,size);// takes an element and places to its correct position and if sorted array the time complexity is O(n)
     return 0;
 }

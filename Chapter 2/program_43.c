@@ -12,6 +12,8 @@ int main(void)
         for(int j =0;j<length-i;j++){
             int sublength = j + 1;
             printf("%.*s\n",sublength,str + i);
+
+            // The formula for the total number of substrings for a string of length N is \(\frac{N\times (N+1)}{2}\). Since your string has a length of 4, \(\frac{4 \times 5}{2} = 10\).
 // 1. The %.*s Format Specifier
 
 // Normally, %s tells printf to print a string until it hits the hidden null terminator (\0).
@@ -22,6 +24,7 @@ int main(void)
 // Because of the asterisk (*), printf now expects two arguments instead of just one:
 // • sub_length: This fills the *. It is an integer specifying the exact number of characters to print.
 // • str + i: This is the starting address in memory. It tells printf to skip the first i characters of the string str and start reading from that exact point.
+
             count++;
         }
     }

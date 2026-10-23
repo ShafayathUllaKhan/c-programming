@@ -19,7 +19,7 @@ int main(void)
     int rowCount = sizeof(Arr2)/sizeof(Arr2[0]);
 
     for(int i =0 ; i< rowCount;i++){
-        int colCount = (i==0) ? sizeof(row0) / sizeof(row0[0]) : sizeof(row1) / sizeof(row1[0]);
+        int colCount = (i==0) ? sizeof(row0) / sizeof(row0[0]) : sizeof(row1) / sizeof(row1[0]);// good formula to print 2d array with different column data
 
         for (int j=0; j < colCount; j++){
             printf("%d ",Arr2[i][j]);

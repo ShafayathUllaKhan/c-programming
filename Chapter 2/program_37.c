@@ -25,7 +25,7 @@ int main(void)
 
     printf("The number of words are %d\n", count);
 
-    // Method 2 : count words by detecting transitions
+    // Method 2 : count words by detecting transitions means by words not by spaces
 
     int words = 0;
     int insideWords = 0;
