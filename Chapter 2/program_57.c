@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// merge to sorted arrays with out extra array
 int sort(int arr[],int n){
     for (int i = 0; i <= n; i++)
     {
