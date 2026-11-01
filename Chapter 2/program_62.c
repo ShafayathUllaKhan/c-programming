@@ -40,6 +40,16 @@ void quicksort(int arr[],int low,int len){
     quicksort(arr,partition+1,len);
 }
 
+void towers_of_hanoi(int n,char A,char B,char C){
+ if(n < 1){
+    return;
+ }
+ towers_of_hanoi(n-1,A,C,B);
+ printf("from %c to %c \n",A,C);
+ towers_of_hanoi(n-1,B,A,C);
+}
+
+
 int main(void)
 {
     int arr[] = {3,2,1};
@@ -51,5 +61,7 @@ int main(void)
         printf("%d",arr[i]);
     }
     printf("\n");
+    char A = 'A',B = 'B',C = 'C';
+    towers_of_hanoi(3,A,B,C);
     return 0;
 }
