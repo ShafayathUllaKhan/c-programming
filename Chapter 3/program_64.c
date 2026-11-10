@@ -109,6 +109,25 @@ void printreverseR(Node *head){
     printreverseR(head->next);
     printf("%d ",head->data);
 }
+
+Node *insertR(Node *head,int element,int pos){
+    if(pos < 0){
+        return head;
+    }
+    if(head == NULL){
+        return head;
+    }
+
+    if(pos == 0){
+        Node *newNode = createNode(element);
+        newNode->next = head;
+        return newNode;
+    }
+
+    head->next = insertR(head->next,element,pos-1);
+    return head;
+}
+
 int main(void)
 {
     Node *head = createLinkedList();
@@ -135,6 +154,9 @@ int main(void)
     printreverseR(head);
     printf("\n");
 
-    
+    insertR(head ,90,2);
+    printf("print after recursive logic: \n");
+    printR(head);
+    printf("\n");
     return 0;
 }
