@@ -19,6 +19,25 @@ void init(stack *s1){
     s1->topindex = -1;
 }
 
+// Constructor equivalent with custom size
+void initStackWithSize(stack *stack, int size) {
+    if (size <= 0) {
+        printf("Invalid stack size\n");
+        exit(1);
+    }
+
+    stack->capacity = size;
+    stack->data = malloc(stack->capacity * sizeof(int));
+
+    if (stack->data == NULL) {
+        printf("Memory allocation failed\n");
+        exit(1);
+    }
+
+    stack->topindex = -1;
+}
+
+
 void doublecapacity(stack *s1){
     int newcapacity = s1->capacity * 2;
     int *temp = realloc(s1->data , newcapacity * sizeof(int));
